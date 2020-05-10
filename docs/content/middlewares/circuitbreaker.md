@@ -7,7 +7,7 @@ Don't Waste Time Calling Unhealthy Services
 
 The circuit breaker protects your system from stacking requests to unhealthy services (resulting in cascading failures).
 
-When your system is healthy, the circuit is close (normal operations). 
+When your system is healthy, the circuit is closed (normal operations). 
 When your system becomes unhealthy, the circuit becomes open and the requests are no longer forwarded (but handled by a fallback mechanism).
 
 To assess if your system is healthy, the circuit breaker constantly monitors the services. 
